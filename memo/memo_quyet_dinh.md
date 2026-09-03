@@ -68,7 +68,7 @@ Nguồn 3 chống đỡ cho nguyên nhân gốc thứ nhất. Nguồn 1 chống 
 | 1 | Chỉ số "Số câu hỏi gửi tới Copilot mỗi tuần" là chỉ số activity. Số này tăng hay giảm đều không nói được nên tiếp tục hay dừng, và còn khuyến khích dùng cho có. | Bỏ hẳn dòng đó. Thay bằng "Tỷ lệ bản nháp dùng được mà không phải viết lại từ đầu", chấm trên mẫu 20 bản nháp theo thang 1–5, đạt từ 4 trở lên thì tính là dùng được. Chỉ số này ở tầng 4 và gắn thẳng với nguyên nhân gốc về độ tin cậy. |
 | 2 | Bản v1 không có dòng nào cho rủi ro và bàn giao, nên khi Copilot trả lời sai thì không ai ghi nhận và nhóm không học được từ lỗi. | Thêm dòng "Số ca Copilot đưa thông tin sai hoặc trích sai nguồn được báo cáo", nguồn dữ liệu là log từ nút báo lỗi, ngưỡng không quá 2 ca mỗi tuần, phụ trách là người phụ trách AI của phòng, và hành động khi vượt ngưỡng là tắt phạm vi tài liệu chưa có owner. |
 
-*Nhóm phản biện: _(ghi tên nhóm)_ — điền ngay sau chặng 3.*
+*Hai góp ý trên do nhóm _(ghi tên nhóm đã phản biện cho B2)_ đưa ra. Chiều ngược lại, B2 phản biện cho Nhóm 04.*
 
 ## 4. Quyết định
 

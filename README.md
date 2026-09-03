@@ -4,7 +4,7 @@ Lab 28 — Dashboard Hành Động cho Áp Dụng AI. Repo gồm dashboard v1 (t
 
 ## 1. Thành viên
 
-*Nhóm phản biện chéo với nhóm: __ (ghi số/tên nhóm)*
+*Nhóm B2 phản biện cho **Nhóm 04**. Nhóm đã góp ý cho B2: _(ghi tên nhóm)_*
 
 | Họ tên | MSSV | Phần phụ trách | Góp ý đã đưa cho nhóm bạn |
 |---|---|---|---|
