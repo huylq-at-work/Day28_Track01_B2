@@ -25,14 +25,16 @@ Nhóm khoá phạm vi vào **Microsoft 365 Copilot đã cấp license cho toàn 
 
 ## 3. Nguyên nhân gốc
 
-*"Ít người dùng" là triệu chứng, không phải nguyên nhân. Hai nguyên nhân dưới đây là giả thuyết đã nháp; nhóm phải gắn bằng chứng thật trước checkpoint phút 40.*
+*"Ít người dùng" là triệu chứng, không phải nguyên nhân. Bằng chứng dưới đây lấy từ hai báo cáo đánh giá công khai của chính phủ Anh trên cùng một sản phẩm Microsoft 365 Copilot, nên so sánh được trực tiếp với tình huống của nhóm.*
 
 | # | Nguyên nhân gốc | Framework | Bằng chứng |
 |---|---|---|---|
-| 1 | Mức sẵn sàng của kho tài liệu chưa đạt: SharePoint không có người phụ trách nội dung, không có lịch cập nhật, phân quyền không đồng nhất, nên Copilot trả lời thiếu hoặc dựa trên bản cũ | Gartner-Lite — trục Readiness (dữ liệu và governance THIẾU trong khi Direction ĐẠT) | _(điền)_ phỏng vấn ngắn 2–3 người có license; đếm số kho tài liệu không có owner |
-| 2 | Người dùng không có cách kiểm chứng nên không dám tin kết quả, nghẽn ở Desire chứ không phải thiếu kiến thức | ADKAR — nghẽn tại Desire và Reinforcement, không phải Knowledge | _(điền)_ câu trả lời phỏng vấn về lý do bỏ dùng; quan sát tại chỗ 10 ca |
+| 1 | Mức sẵn sàng của kho tài liệu chưa đạt: SharePoint không có người phụ trách nội dung, không có lịch cập nhật, phân quyền tích tụ qua nhiều năm, nên Copilot trả lời thiếu hoặc dựa trên bản cũ | Gartner-Lite — trục Readiness THIẾU trong khi Direction ĐẠT | Microsoft xác định oversharing và nội dung tồn đọng trên SharePoint là rào cản phải xử lý **trước** khi triển khai Copilot, và phát hành công cụ riêng cho việc này ([Microsoft Community Hub](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/mitigate-oversharing-to-govern-microsoft-365-copilot-and-agents/4448744)) |
+| 2 | Người dùng không có cách kiểm chứng thống nhất nên chất lượng đầu ra không ổn định và không ai dám tin kết quả | ADKAR — nghẽn tại Desire và Reinforcement, không phải Knowledge | Đánh giá của Bộ Kinh doanh và Thương mại Anh ghi nhận cách kiểm tra chất lượng đầu ra không thống nhất giữa người dùng và giữa các loại tác vụ, có báo cáo hiện tượng bịa thông tin; trong bài kiểm tra có nhóm đối chứng, người dùng Copilot làm phân tích Excel **chậm hơn và kém chính xác hơn** người không dùng ([DBT evaluation, 2025](https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf)) |
 
-**Hệ quả cho phần giải pháp:** mở lớp đào tạo không giải quyết được hai nguyên nhân này. Cần sửa nguồn dữ liệu và cách kiểm chứng trước, rồi mới tính chuyện tăng mức dùng.
+**Bằng chứng phụ, dùng cho lập luận về cách đo:** thử nghiệm liên bộ do GDS chạy trên hơn 20.000 công chức, từ 30/9 đến 31/12/2024, cho con số tiết kiệm trung bình 26 phút mỗi ngày, nhưng đó là **số người dùng tự ước tính trong khảo sát**. Cùng sản phẩm đó, đánh giá của DBT có nhóm đối chứng lại kết luận không tìm thấy bằng chứng rằng thời gian tiết kiệm dẫn tới tăng năng suất. Đây chính là bài học DWP/GDS mà lab nhắc tới, và là lý do dashboard của nhóm không dùng chỉ số tự khai.
+
+**Hệ quả cho phần giải pháp:** mở lớp đào tạo không giải quyết được hai nguyên nhân này. Đánh giá của DBT còn ghi nhận tự học có hiệu quả cao hơn các buổi đào tạo chính thức của phòng ban trong việc tăng mức hài lòng. Cần sửa nguồn dữ liệu và cách kiểm chứng trước, rồi mới tính chuyện tăng mức dùng.
 
 ## 4. Cách làm mới
 
@@ -64,6 +66,15 @@ Nhóm cố ý không đưa số lần đăng nhập và số câu hỏi vào das
 - **2 thay đổi so với v1:**
   1. _(điền sau phản biện)_
   2. _(điền sau phản biện)_
+
+## 7. Nguồn tham khảo
+
+| Nguồn | Dùng cho | Địa chỉ |
+|---|---|---|
+| DBT — Microsoft 365 Copilot evaluation (2025) | Nguyên nhân gốc 2, lập luận chống chỉ số tự khai | [assets.publishing.service.gov.uk](https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf) |
+| GDS — M365 Copilot cross-government experiment findings (2025) | Bằng chứng phụ về số liệu tự khai | [gov.uk](https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report) |
+| Microsoft — Mitigate oversharing to govern M365 Copilot | Nguyên nhân gốc 1, trục Readiness | [techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/mitigate-oversharing-to-govern-microsoft-365-copilot-and-agents/4448744) |
+| Prosci — ADKAR Model | Tìm điểm nghẽn ở người dùng | [prosci.com](https://www.prosci.com/methodology/adkar) |
 
 ## Cấu trúc repo
 

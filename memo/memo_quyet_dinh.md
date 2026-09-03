@@ -41,7 +41,25 @@ Kết luận: pilot nhỏ một phòng để sửa readiness, chưa mở rộng 
 
 Điểm nghẽn nằm ở Desire và Reinforcement, nên mở lớp đào tạo không giải quyết được vấn đề.
 
-**Bằng chứng:** _(điền)_ phỏng vấn ngắn 2–3 người đang có license về lý do bỏ dùng; đếm số kho tài liệu SharePoint không có người phụ trách; quan sát tại chỗ 10 ca soạn văn bản. Bài học tham khảo là Morgan Stanley, độ tin cậy phải đi trước mở rộng.
+**Bằng chứng.** Nhóm dùng ba nguồn công khai, đều nói về chính Microsoft 365 Copilot nên so sánh được trực tiếp.
+
+1. **Đánh giá của Bộ Kinh doanh và Thương mại Anh (DBT), công bố 2025.** Pilot 1.000 license, ba tháng từ tháng 10/2024, phương pháp gồm nhật ký sử dụng, phỏng vấn, và bài kiểm tra có quan sát với nhóm đối chứng không dùng Copilot. Kết quả: mức hài lòng cao, 72% người trả lời hài lòng hoặc rất hài lòng. Nhưng khi đo bằng bài kiểm tra có nhóm đối chứng, người dùng Copilot làm phân tích Excel chậm hơn và kém chính xác hơn người không dùng, còn slide PowerPoint nhanh hơn hơn 7 phút nhưng chất lượng và độ chính xác kém hơn. Báo cáo kết luận không tìm thấy bằng chứng rằng thời gian tiết kiệm dẫn tới tăng năng suất. Báo cáo cũng ghi nhận cách kiểm tra chất lượng đầu ra không thống nhất giữa người dùng, và có hiện tượng bịa thông tin.
+
+2. **Thử nghiệm liên bộ do Government Digital Service chạy, 2024–2025.** Hơn 20.000 công chức thuộc 12 cơ quan, từ 30/9 đến 31/12/2024. Con số nổi bật là tiết kiệm trung bình 26 phút mỗi ngày, nhưng đó là số người dùng **tự ước tính trong khảo sát**, thu từ 7.115 phiếu trả lời.
+
+3. **Hướng dẫn quản trị của chính Microsoft.** Microsoft xác định tình trạng chia sẻ quá rộng và nội dung tồn đọng trên SharePoint là rào cản phải xử lý trước khi triển khai Copilot, và phát hành công cụ riêng để rà soát phân quyền và nội dung không còn dùng.
+
+**Cách nhóm đọc ba nguồn này.** Nguồn 1 và nguồn 2 nói về cùng một sản phẩm nhưng cho kết luận trái ngược, và lý do nằm ở cách đo. Con số 26 phút là số tự khai, còn kết luận không tăng năng suất đến từ thiết kế có nhóm đối chứng. Đây đúng là bài học DWP/GDS mà lab nhắc tới, ước tính thận trọng nhưng có nhóm so sánh đáng tin hơn số liệu tự khai. Vì vậy dashboard của nhóm loại bỏ chỉ số thời gian tiết kiệm tự khai và số lần đăng nhập, thay bằng thời gian lấy từ log tác vụ và chất lượng chấm trên mẫu.
+
+Nguồn 3 chống đỡ cho nguyên nhân gốc thứ nhất. Nguồn 1 chống đỡ cho nguyên nhân gốc thứ hai, và còn cho thấy đào tạo không phải lời giải, vì báo cáo ghi nhận tự học có hiệu quả cao hơn các buổi đào tạo chính thức của phòng ban trong việc tăng mức hài lòng.
+
+*Nếu nhóm tiếp cận được người dùng thật thì bổ sung thêm một quan sát tại chỗ hoặc phỏng vấn ngắn, nhưng theo §4.2 chỉ cần tối thiểu một loại bằng chứng và case tham khảo đã đủ điều kiện.*
+
+**Nguồn:**
+
+- DBT — Microsoft 365 Copilot evaluation (2025): https://assets.publishing.service.gov.uk/media/68adbe409e1cebdd2c96a19d/dbt-microsoft-365-copilot-evaluation.pdf
+- GDS — M365 Copilot cross-government experiment findings report: https://www.gov.uk/government/publications/microsoft-365-copilot-experiment-cross-government-findings-report
+- Microsoft — Mitigate oversharing to govern Microsoft 365 Copilot: https://techcommunity.microsoft.com/blog/microsoft365copilotblog/mitigate-oversharing-to-govern-microsoft-365-copilot-and-agents/4448744
 
 ## 3. Ít nhất 2 thay đổi sau phản biện
 
