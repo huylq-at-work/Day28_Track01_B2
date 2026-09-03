@@ -1,4 +1,4 @@
-# Memo quyết định — Day28_Track01_<Ten_Nhom>
+# Memo quyết định — Day28_Track01_B2
 
 ## 1. Vấn đề và nguyên nhân gốc
 

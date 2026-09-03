@@ -1,6 +1,4 @@
-# Day28_Track01_<Ten_Nhom>
-
-> Đổi `<Ten_Nhom>` thành tên nhóm (không dấu, không khoảng trắng, nối bằng `_`). Xoá các dòng hướng dẫn in nghiêng sau khi điền.
+# Day28_Track01_B2
 
 Lab 28 — Dashboard Hành Động cho Áp Dụng AI. Repo gồm dashboard v1 (trước phản biện), dashboard v2 (sau phản biện) và memo quyết định.
 
