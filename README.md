@@ -8,7 +8,7 @@ Lab 28 — Dashboard Hành Động cho Áp Dụng AI. Repo gồm dashboard v1 (t
 
 | Họ tên | MSSV | Phần phụ trách | Góp ý đã đưa cho nhóm bạn |
 |---|---|---|---|
-| Đàm Việt Cường | 2A202601566 | Workflow AS-IS / TO-BE, phân chia việc người–AI (Mollick), kiến trúc tin cậy | _(điền sau chặng 3)_ |
+| Đàm Việt Cường | 2A202601566 | Workflow AS-IS / TO-BE, phân chia việc người–AI (Mollick), kiến trúc tin cậy | Nhóm 04: Đang đếm số lượt hỏi/ngày là chỉ số đo hoạt động chứ chưa thấy giá trị thật. Nên đổi sang đo tỷ lệ câu trả lời có link nguồn rõ ràng và tỷ lệ bản nháp dùng được mà không phải gõ lại từ đầu. |
 | Lê Quang Huy | 2A202601821 | Khoá phạm vi, chẩn đoán nguyên nhân gốc (Gartner-Lite + ADKAR), tổng hợp memo | _(điền sau chặng 3)_ |
 | Hoàng Minh Quân | 2A202601574 | Dashboard chỉ số 5 tầng, lộ trình 30–60–90, logic ra quyết định | _(điền sau chặng 3)_ |
 
