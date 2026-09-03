@@ -8,9 +8,9 @@ Lab 28 — Dashboard Hành Động cho Áp Dụng AI. Repo gồm dashboard v1 (t
 
 | Họ tên | MSSV | Phần phụ trách | Góp ý đã đưa cho nhóm bạn |
 |---|---|---|---|
-| Đàm Việt Cường | 2A202601566 | | |
-| Lê Quang Huy | 2A202601821 | | |
-| Hoàng Minh Quân | 2A202601574 | | |
+| Đàm Việt Cường | 2A202601566 | Workflow AS-IS / TO-BE, phân chia việc người–AI (Mollick), kiến trúc tin cậy | _(điền sau chặng 3)_ |
+| Lê Quang Huy | 2A202601821 | Khoá phạm vi, chẩn đoán nguyên nhân gốc (Gartner-Lite + ADKAR), tổng hợp memo | _(điền sau chặng 3)_ |
+| Hoàng Minh Quân | 2A202601574 | Dashboard chỉ số 5 tầng, lộ trình 30–60–90, logic ra quyết định | _(điền sau chặng 3)_ |
 
 ## 2. Phạm vi
 
@@ -52,20 +52,25 @@ Nhóm khoá phạm vi vào **Microsoft 365 Copilot đã cấp license cho toàn 
 
 | Loại | Chỉ số | Baseline | Target | Nguồn dữ liệu | Owner |
 |---|---|---|---|---|---|
-| Product | Tỷ lệ câu trả lời truy được về tài liệu nguồn có ngày cập nhật | Đo mẫu tuần 1, 30 câu hỏi thật | ≥ 90% sau 60 ngày | Kiểm tra mẫu 30 câu/tuần | Phụ trách QA |
-| Product | Thời gian chờ hoàn thành một yêu cầu văn bản nội bộ | Số hiện tại, 3 tháng gần nhất | Giảm ≥ 20% sau 90 ngày | Hệ thống giao việc | Chủ nghiệp vụ |
-| Workflow | Thời gian trung bình hoàn thành một văn bản chuẩn | Bấm giờ mẫu 20 ca | Giảm ≥ 25% | Log tác vụ | Chủ quy trình |
-| Workflow | Tỷ lệ bản nháp dùng được mà không phải viết lại | Đo mẫu 20 bản nháp | ≥ 70% sau 60 ngày | Người duyệt chấm mẫu | Người duyệt văn bản |
+| Product | Tỷ lệ câu trả lời truy được về tài liệu nguồn có ngày cập nhật | 45% | ≥ 90% sau 60 ngày | Kiểm tra mẫu 30 câu/tuần | Phụ trách QA |
+| Product | Thời gian chờ hoàn thành một yêu cầu văn bản nội bộ | 3,5 ngày làm việc | ≤ 2,8 ngày sau 90 ngày | Hệ thống giao việc | Chủ nghiệp vụ |
+| Product | Số ca đưa thông tin sai hoặc trích sai nguồn | Chưa đo được, chưa có nút báo lỗi | ≤ 2 ca/tuần | Log lỗi | Phụ trách AI |
+| Workflow | Tỷ lệ ca soạn văn bản đi qua bước dùng Copilot | 25% | ≥ 60% sau 60 ngày | Log quy trình + admin center | Trưởng nhóm văn phòng |
+| Workflow | Thời gian trung bình hoàn thành một văn bản chuẩn | 48 phút | ≤ 36 phút | Log tác vụ | Chủ quy trình |
+| Workflow | Tỷ lệ bản nháp dùng được mà không phải viết lại | 40% | ≥ 70% sau 60 ngày | Người duyệt chấm mẫu, thang 1–5 | Người duyệt văn bản |
+| Workflow | Tỷ lệ người dùng mở tài liệu nguồn kiểm chứng | 30% | ≥ 80% sau 60 ngày | Quan sát mẫu hàng tuần | Trưởng nhóm văn phòng |
+
+**Các số trên là giả định có neo, chưa phải số đo thật.** Baseline 25% neo theo thử nghiệm GDS, nơi 25% người dùng dùng Copilot hằng ngày trong Word. Target 60% neo theo DBT, nơi tỷ lệ người dùng hoạt động theo tuần là 64%. Nhóm phải thay bằng số đo thật trước khi dùng cho quyết định thật; căn cứ từng giả định ghi ở cột Ghi chú trong file dashboard.
 
 Nhóm cố ý không đưa số lần đăng nhập và số câu hỏi vào dashboard, vì đó là chỉ số activity không dẫn tới quyết định.
 
 ## 6. Quyết định
 
-- **Quyết định:** Tiếp tục / Sửa / Dừng — _(chốt cuối chặng 3)_
-- **Lý do (một câu):** _(điền)_
+- **Quyết định: SỬA.** Giữ pilot trong một phòng, sửa nguyên nhân readiness và độ tin cậy trước, chưa mở rộng license ra toàn công ty.
+- **Lý do (một câu):** mức dùng thấp là triệu chứng của kho tài liệu chưa có người phụ trách và của việc không có cách kiểm chứng, nên mở rộng license khi chưa sửa hai thứ đó chỉ làm tăng số người thất vọng.
 - **2 thay đổi so với v1:**
-  1. _(điền sau phản biện)_
-  2. _(điền sau phản biện)_
+  1. Bỏ chỉ số "Số câu hỏi gửi tới Copilot mỗi tuần", thay bằng "Tỷ lệ bản nháp dùng được mà không phải viết lại". Lý do: đếm số câu hỏi là chỉ số activity, tăng hay giảm đều không dẫn tới quyết định nào.
+  2. Thêm dòng rủi ro và bàn giao "Số ca đưa thông tin sai hoặc trích sai nguồn", kèm owner và hành động khi vượt ngưỡng. Lý do: bản v1 không có chỗ nào ghi nhận khi AI sai, nên không học được từ lỗi.
 
 ## 7. Nguồn tham khảo
 

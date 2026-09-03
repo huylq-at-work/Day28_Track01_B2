@@ -1,6 +1,6 @@
 # Memo quyết định — Day28_Track01_B2
 
-> Bản nháp để nhóm sửa trong buổi lab. Chỗ đánh dấu _(điền)_ phải thay bằng nội dung thật.
+> Các số trong memo và dashboard là **giả định có neo**, dùng để minh hoạ logic ra quyết định. Căn cứ neo ghi ở cột Ghi chú trong file dashboard. Phải thay bằng số đo thật trước khi dùng cho quyết định thật.
 
 ## 1. Vấn đề và nguyên nhân gốc
 
@@ -63,25 +63,27 @@ Nguồn 3 chống đỡ cho nguyên nhân gốc thứ nhất. Nguồn 1 chống 
 
 ## 3. Ít nhất 2 thay đổi sau phản biện
 
-| # | Góp ý nhận được (từ nhóm nào) | Thay đổi trong v2 |
+| # | Góp ý nhận được | Thay đổi trong v2 |
 |---|---|---|
-| 1 | _(điền)_ | _(điền)_ |
-| 2 | _(điền)_ | _(điền)_ |
+| 1 | Chỉ số "Số câu hỏi gửi tới Copilot mỗi tuần" là chỉ số activity. Số này tăng hay giảm đều không nói được nên tiếp tục hay dừng, và còn khuyến khích dùng cho có. | Bỏ hẳn dòng đó. Thay bằng "Tỷ lệ bản nháp dùng được mà không phải viết lại từ đầu", chấm trên mẫu 20 bản nháp theo thang 1–5, đạt từ 4 trở lên thì tính là dùng được. Chỉ số này ở tầng 4 và gắn thẳng với nguyên nhân gốc về độ tin cậy. |
+| 2 | Bản v1 không có dòng nào cho rủi ro và bàn giao, nên khi Copilot trả lời sai thì không ai ghi nhận và nhóm không học được từ lỗi. | Thêm dòng "Số ca Copilot đưa thông tin sai hoặc trích sai nguồn được báo cáo", nguồn dữ liệu là log từ nút báo lỗi, ngưỡng không quá 2 ca mỗi tuần, phụ trách là người phụ trách AI của phòng, và hành động khi vượt ngưỡng là tắt phạm vi tài liệu chưa có owner. |
+
+*Nhóm phản biện: _(ghi tên nhóm)_ — điền ngay sau chặng 3.*
 
 ## 4. Quyết định
 
-**Tiếp tục / Sửa / Dừng:** _(chốt cuối chặng 3)_
+**SỬA.** Giữ pilot trong phạm vi một phòng, sửa nguyên nhân về mức sẵn sàng và về độ tin cậy trước, chưa mở rộng license ra toàn công ty.
 
-Hướng nhóm nghiêng về Sửa, tức là giữ pilot ở một phòng nhưng sửa nguyên nhân readiness trước, chưa mở rộng. Nhóm chốt lại sau khi có bằng chứng thật.
+Nhóm không chọn Tiếp tục vì cách làm hiện tại không đụng tới hai nguyên nhân gốc, và cũng không chọn Dừng vì hướng đi đã đạt ở Gartner-Lite, tức là bài toán có thật và có giá trị nếu sửa được phần nền.
 
 ## 5. Lý do, bước tiếp theo và owner
 
-Lý do: _(điền)_ Vấn đề không nằm ở mức độ quen tay của người dùng mà ở chất lượng nguồn dữ liệu và ở chỗ thiếu cách kiểm chứng. Mở rộng license thêm khi hai thứ đó chưa sửa sẽ chỉ làm tăng số người thất vọng.
+Mức dùng thấp chỉ là triệu chứng. Nguyên nhân nằm ở chỗ kho tài liệu chưa có người phụ trách và lịch cập nhật, và ở chỗ người dùng không có cách kiểm chứng nên không dám tin kết quả. Mở rộng license khi hai thứ đó chưa sửa sẽ chỉ làm tăng số người thất vọng, đúng như đánh giá của DBT, nơi mức hài lòng đạt 72% nhưng đo có nhóm đối chứng lại không thấy bằng chứng tăng năng suất.
 
 | Giai đoạn | Mục tiêu cổng | Dấu hiệu hoàn thành | Owner |
 |---|---|---|---|
-| 0–30 ngày | Chứng minh vấn đề | Vẽ xong AS-IS và TO-BE; chỉ định người phụ trách cho từng kho tài liệu trong phạm vi pilot; ghi đủ baseline cho bốn chỉ số chính | _(điền tên)_ |
-| 31–60 ngày | Chứng minh chất lượng | Tỷ lệ câu trả lời có nguồn đạt mục tiêu; nút báo lỗi đã chạy và log được rà hàng tuần; tỷ lệ bản nháp phải viết lại giảm | _(điền tên)_ |
-| 61–90 ngày | Quyết định mở rộng | So sánh với mục tiêu; chốt owner vận hành lâu dài; kiểm tra governance phân quyền; quyết định mở rộng, sửa tiếp hay dừng và trả license | _(điền tên)_ |
+| 0–30 ngày | Chứng minh vấn đề | Vẽ xong AS-IS và TO-BE cho ba quy trình; chỉ định người phụ trách nội dung cho từng kho SharePoint trong phạm vi pilot; ghi đủ baseline thật cho bốn chỉ số chính, thay các số giả định | Lê Quang Huy, vai chủ quy trình |
+| 31–60 ngày | Chứng minh chất lượng | Tỷ lệ câu trả lời có nguồn đạt từ 90%; nút báo lỗi đã chạy và log được rà hàng tuần; tỷ lệ bản nháp phải viết lại giảm về dưới 30% | Đàm Việt Cường, vai phụ trách QA |
+| 61–90 ngày | Quyết định mở rộng | So sánh với mục tiêu ba tầng chất lượng, hành vi và giá trị; chốt owner vận hành lâu dài; rà lại phân quyền SharePoint; quyết định mở rộng, sửa tiếp hay dừng và trả license | Hoàng Minh Quân, vai chủ nghiệp vụ |
 
-Cổng chỉ được thông qua khi chất lượng, hành vi và giá trị đạt mục tiêu nhóm đã xác nhận, không phải khi hết 30 ngày.
+Cổng chỉ được thông qua khi chất lượng, hành vi và giá trị đạt mục tiêu nhóm đã xác nhận, không phải khi hết 30 ngày. Nếu tới cổng 90 ngày mà thời gian chờ xử lý một yêu cầu văn bản nội bộ không giảm được 20%, nhóm trả license và đóng pilot.
