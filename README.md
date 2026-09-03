@@ -8,9 +8,9 @@ Lab 28 — Dashboard Hành Động cho Áp Dụng AI. Repo gồm dashboard v1 (t
 
 | Họ tên | MSSV | Phần phụ trách | Góp ý đã đưa cho nhóm bạn |
 |---|---|---|---|
-| Đàm Việt Cường | 2A202601566 | Workflow AS-IS / TO-BE, phân chia việc người–AI (Mollick), kiến trúc tin cậy | Nhóm 04: Đang đếm số lượt hỏi/ngày là chỉ số đo hoạt động chứ chưa thấy giá trị thật. Nên đổi sang đo tỷ lệ câu trả lời có link nguồn rõ ràng và tỷ lệ bản nháp dùng được mà không phải gõ lại từ đầu. |
-| Lê Quang Huy | 2A202601821 | Khoá phạm vi, chẩn đoán nguyên nhân gốc (Gartner-Lite + ADKAR), tổng hợp memo | _(điền sau chặng 3)_ |
-| Hoàng Minh Quân | 2A202601574 | Dashboard chỉ số 5 tầng, lộ trình 30–60–90, logic ra quyết định | _(điền sau chặng 3)_ |
+| Đàm Việt Cường | 2A202601566 | Gartner-Lite (Readiness: Data, Governance, Operation) + Bằng chứng phỏng vấn & đếm kho SharePoint | Nhóm 05: Chỉ số "số câu hỏi" là activity metric, đề xuất đổi sang "tỷ lệ câu trả lời có nguồn & ngày cập nhật"; dashboard thiếu hành động khi chỉ số xấu |
+| Lê Quang Huy | 2A202601821 | ADKAR (Desire, Reinforcement) + Quan sát 10 ca soạn văn bản + Product/Workflow metrics | Nhóm 05: Phân chia Mollick chưa rõ — TO-BE vẫn giống AS-IS chỉ chèn thêm bước "hỏi AI", đề xuất tách rõ vùng AI hỗ trợ vs Người giữ quyền |
+| Hoàng Minh Quân | 2A202601574 | Mollick (Phân chia việc Người–AI) + Thiết kế AS-IS/TO-BE + Lộ trình 30–60–90 ngày + Owner giai đoạn | Nhóm 05: Gartner-Lite đánh giá Direction ĐẠT nhưng Absorption THIẾU chưa có owner vận hành & vòng phản hồi; đề xuất bổ sung cổng 30 ngày: chỉ định data owner & bật nút báo lỗi |
 
 ## 2. Phạm vi
 

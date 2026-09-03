@@ -29,6 +29,25 @@ Kết luận: pilot nhỏ một phòng để sửa readiness, chưa mở rộng 
 
 **Mollick** dùng để chia lại việc giữa người và AI. Copilot nằm hoàn toàn ở vùng AI hỗ trợ, người kiểm. Không có phần nào tự động hoàn toàn trong ba quy trình này, vì văn bản phát hành ra ngoài có rủi ro và chưa có tiêu chí kiểm tra tự động.
 
+**Chi tiết phân chia theo Mollick (phần cá nhân — Hoàng Minh Quân):**
+
+| Vùng | Quy trình: Soạn văn bản | Quy trình: Tóm tắt cuộc họp | Quy trình: Tra cứu tài liệu |
+|---|---|---|---|
+| **Người giữ quyền** | Người soạn chịu trách nhiệm bản cuối; người duyệt phê duyệt | Người dẫn họp chịu trách nhiệm bản tóm tắt; người duyệt phê duyệt | Người hỏi chịu trách nhiệm dùng đúng thông tin; người duyệt (nếu có) xác nhận |
+| **AI hỗ trợ, người kiểm** | Copilot tạo bản nháp từ prompt + tài liệu tham chiếu; người soạn mở nguồn kiểm chứng, chỉnh sửa, hoàn thiện | Copilot tóm tắt từ bản ghi âm/phục hồi; người dẫn họp kiểm tra hành động, quyết định, người tham dự | Copilot tìm & trích dẫn đoạn liên quan kèm link & ngày cập nhật; người hỏi đọc nguồn, xác nhận trước khi dùng |
+| **AI tự động (không áp dụng)** | — | — | — |
+
+**AS-IS → TO-BE (phần cá nhân — Hoàng Minh Quân):**
+
+| Bước | AS-IS (hiện tại) | TO-BE (sau thiết kế lại) |
+|---|---|---|
+| 1 | Nhận yêu cầu soạn/tóm tắt/tra cứu | Nhận yêu cầu → xác định quy trình phù hợp (3 loại) |
+| 2 | Tự soạn từ đầu HOẶC mở thư mục tìm file thủ công HOẶC hỏi đồng nghiệp | Hỏi Copilot theo mẫu prompt chuẩn cho từng quy trình |
+| 3 | Đọc/soạn sàng lọc thông tin thủ công | Mở tài liệu nguồn (link + ngày cập nhật) do Copilot trả về → kiểm chứng nội dung |
+| 4 | Gửi duyệt / dùng trực tiếp | Soạn/hoàn thiện bản nháp → chịu trách nhiệm kết quả → gửi duyệt |
+| 5 | (Không có cơ chế lỗi) | Nếu không truy được nguồn / nguồn quá hạn → bấm "Báo lỗi" → log lỗi → quay về cách cũ |
+| 6 | (Không có theo dõi) | Log lỗi được rà hàng tuần → thu hẹp/mở rộng phạm vi tài liệu → cập nhật kho |
+
 **ADKAR** dùng để tìm điểm nghẽn ở người dùng.
 
 | Bước | Nhận định | Trạng thái |
