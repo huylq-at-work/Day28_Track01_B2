@@ -53,7 +53,7 @@ Nhóm khoá phạm vi vào **Microsoft 365 Copilot đã cấp license cho toàn 
 | Loại | Chỉ số | Baseline | Target | Nguồn dữ liệu | Owner |
 |---|---|---|---|---|---|
 | Product | Tỷ lệ câu trả lời truy được về tài liệu nguồn có ngày cập nhật | 45% | ≥ 90% sau 60 ngày | Kiểm tra mẫu 30 câu/tuần | Phụ trách QA |
-| Product | Thời gian chờ hoàn thành một yêu cầu văn bản nội bộ | 3,5 ngày làm việc | ≤ 2,8 ngày sau 90 ngày | Hệ thống giao việc | Chủ nghiệp vụ |
+| Product | Thời gian chờ hoàn thành một yêu cầu văn bản nội bộ | 3,5 ngày làm việc | ≤ 2,8 ngày, giảm 20% sau 90 ngày | Hệ thống giao việc | Chủ nghiệp vụ |
 | Product | Số ca đưa thông tin sai hoặc trích sai nguồn | Chưa đo được, chưa có nút báo lỗi | ≤ 2 ca/tuần | Log lỗi | Phụ trách AI |
 | Workflow | Tỷ lệ ca soạn văn bản đi qua bước dùng Copilot | 25% | ≥ 60% sau 60 ngày | Log quy trình + admin center | Trưởng nhóm văn phòng |
 | Workflow | Thời gian trung bình hoàn thành một văn bản chuẩn | 48 phút | ≤ 36 phút | Log tác vụ | Chủ quy trình |
