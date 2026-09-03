@@ -14,8 +14,6 @@ Lab 28 — Dashboard Hành Động cho Áp Dụng AI. Repo gồm dashboard v1 (t
 
 ## 2. Phạm vi
 
-> Nháp sẵn để nhóm sửa. Chốt lại con số và tên phòng ban theo tình huống thật lấy từ hoạt động mở đầu.
-
 Nhóm khoá phạm vi vào **Microsoft 365 Copilot đã cấp license cho toàn phòng, dùng bởi nhân viên khối văn phòng, trong ba quy trình soạn văn bản, tóm tắt cuộc họp và tra cứu tài liệu trên SharePoint, nơi phần lớn người dùng quay lại làm thủ công sau tháng đầu tiên.**
 
 - **Product:** Microsoft 365 Copilot, đã cấp license toàn phòng
@@ -46,9 +44,21 @@ Nhóm khoá phạm vi vào **Microsoft 365 Copilot đã cấp license cho toàn 
 
 **TO-BE:** nhận yêu cầu → hỏi Copilot theo quy trình → mở tài liệu nguồn kiểm chứng → soạn và chịu trách nhiệm → gửi duyệt, hoặc báo lỗi và quay về cách cũ.
 
+Bảng AS-IS / TO-BE đầy đủ cho cả ba quy trình, kèm phân chia việc người–AI theo Mollick và chuỗi kiến trúc tin cậy, nằm ở sheet **Workflow_ASIS_TOBE** trong hai file dashboard.
+
+**Lộ trình 30–60–90 ngày.** Ba cổng quyết định dựa trên bằng chứng, không phải lịch triển khai. Bản đầy đủ kèm dấu hiệu hoàn thành nằm ở phần 5 của [memo](memo/memo_quyet_dinh.md).
+
+| Giai đoạn | Mục tiêu cổng | Owner |
+|---|---|---|
+| 0–30 ngày | Chứng minh vấn đề: chỉ định người phụ trách từng kho SharePoint, ghi baseline thật thay số giả định | Lê Quang Huy, vai chủ quy trình |
+| 31–60 ngày | Chứng minh chất lượng: tỷ lệ câu trả lời có nguồn đạt 90%, nút báo lỗi đã chạy | Đàm Việt Cường, vai phụ trách QA |
+| 61–90 ngày | Quyết định mở rộng: so với mục tiêu, chốt owner vận hành, rà phân quyền | Hoàng Minh Quân, vai chủ nghiệp vụ |
+
+Cổng chỉ được thông qua khi đạt mục tiêu, không phải khi hết ngày.
+
 ## 5. Chỉ số
 
-*Bản đầy đủ bảy dòng nằm trong `dashboard/dashboard_hanh_dong_v2.xlsx`. Baseline và target phải chốt lại bằng dữ liệu nhóm thật sự lấy được.*
+*Bảy dòng đầy đủ, kèm cột hành động khi chỉ số xấu, nằm ở sheet **Dashboard** trong `dashboard/dashboard_hanh_dong_v2.xlsx`.*
 
 | Loại | Chỉ số | Baseline | Target | Nguồn dữ liệu | Owner |
 |---|---|---|---|---|---|
@@ -85,7 +95,9 @@ Nhóm cố ý không đưa số lần đăng nhập và số câu hỏi vào das
 
 ```
 ├── README.md
-├── dashboard/dashboard_hanh_dong_v2.xlsx   ← bản v2 sau kiểm tra chéo
-├── memo/memo_quyet_dinh.md                 ← 5 phần
-└── v1/dashboard_hanh_dong_v1.xlsx          ← bản trước phản biện, để đối chiếu
+├── dashboard/dashboard_hanh_dong_v2.xlsx   ← bản v2 sau kiểm tra chéo, 7 chỉ số
+├── memo/memo_quyet_dinh.md                 ← 5 phần, gồm lộ trình 30–60–90
+└── v1/dashboard_hanh_dong_v1.xlsx          ← bản trước phản biện, 6 chỉ số, để đối chiếu
 ```
+
+Mỗi file dashboard có ba sheet: **Dashboard** là bảng chỉ số, **Workflow_ASIS_TOBE** là quy trình cũ và quy trình mới, **Huong_dan** là chú giải cách đọc.
