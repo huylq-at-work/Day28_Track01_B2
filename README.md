@@ -8,9 +8,9 @@ Lab 28 — Dashboard Hành Động cho Áp Dụng AI. Repo gồm dashboard v1 (t
 
 | Họ tên | MSSV | Phần phụ trách | Góp ý đã đưa cho nhóm bạn |
 |---|---|---|---|
-| Lê Quang Huy | 2026A201821 | | |
-| | | | |
-| | | | |
+| Đàm Việt Cường | 2A202601566 | | |
+| Lê Quang Huy | 2A202601821 | | |
+| Hoàng Minh Quân | 2A202601574 | | |
 
 ## 2. Phạm vi
 
